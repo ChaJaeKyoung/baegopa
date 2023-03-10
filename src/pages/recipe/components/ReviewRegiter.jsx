@@ -91,7 +91,7 @@ function ReviewRegiter(props) {
     const querySelectSnapshot = await getDoc(doc(db, "RecipeDB", docId)); 
     const recipeItemCall = querySelectSnapshot.data();
     setRecipeItem(recipeItemCall);
-    imgRef.current = null;
+    imgRef.current.value = '';
     setImgFile('');
     setContent('');
     // setUpload('');
